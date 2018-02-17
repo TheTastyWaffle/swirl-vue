@@ -1,8 +1,8 @@
-#Swirl 2018 - Subject 01 Vue.js
+# Swirl 2018 - Subject 01 Vue.js
 josso_t
 
 ## Description
-Basic ~REST (all 200 status) api handled with JSON as data.
+Basic ~REST api handled with JSON as data.
 
 ## Usage
 Use yarn preferably
@@ -36,3 +36,5 @@ error                       //Error message, null if none
 ```
 
 ### Front-end ('front' folder)
+
+TODO
