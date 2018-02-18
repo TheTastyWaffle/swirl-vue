@@ -1,4 +1,4 @@
 const THEME = require('./THEME');
-module.exports = function(app) {
+module.exports = function (app) {
     THEME(app);
 };

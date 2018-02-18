@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (app) {
-    var THEME = require('../controllers/THEME');
+    const THEME = require('../controllers/THEME');
 
     app.route('/THEME')
         .get(THEME.getAllTHEME)

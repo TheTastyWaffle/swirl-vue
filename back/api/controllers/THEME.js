@@ -4,7 +4,7 @@ const uniqid = require('uniqid');
 const response = require('../../tools/response');
 const file = require('../../tools/file');
 
-var content = file.getContent('../THEME.json');
+const content = file.getContent('../THEME.json');
 
 exports.getAllTHEME = function (req, res) {
     res.send(
@@ -14,9 +14,9 @@ exports.getAllTHEME = function (req, res) {
 
 exports.createTHEME = function (req, res) {
     try {
-        var author = req.body.author;
-        if (author !== undefined) {
-            var THEME = {
+        const author = req.body.author;
+        if (author !== undefined && author !== '') {
+            const THEME = {
                 'id': uniqid(),
                 'author': author
             };
@@ -35,9 +35,9 @@ exports.createTHEME = function (req, res) {
 };
 
 exports.getTHEME = function(req, res) {
-    var id = req.params.THEMEId;
+    const id = req.params.THEMEId;
     console.log(req.params);
-    for (var i = 0; i < Number(content.length); i++) {
+    for (let i = 0; i < Number(content.length); i++) {
         if (content[i].id === id) {
             res.send(response(content[i], 'get', null));
             return;
@@ -48,9 +48,9 @@ exports.getTHEME = function(req, res) {
 };
 
 exports.updateTHEME = function(req, res) {
-    var id = req.params.THEMEId;
-    var author = req.body.author;
-    for (var i = 0; i < Number(content.length); i++) {
+    const id = req.params.THEMEId;
+    const author = req.body.author;
+    for (let i = 0; i < Number(content.length); i++) {
         if (content[i].id === id) {
             res.status(501);
             res.send(response(content[i], 'put', 'not implemented :)'));
@@ -62,8 +62,8 @@ exports.updateTHEME = function(req, res) {
 };
 
 exports.deleteTHEME = function (req, res) {
-    var id = req.params.THEMEId;
-    for (var i = 0; i < Number(content.length); i++) {
+    const id = req.params.THEMEId;
+    for (let i = 0; i < Number(content.length); i++) {
         if (content[i].id === id) {
             const del = content[i];
             content.splice(i, 1);
