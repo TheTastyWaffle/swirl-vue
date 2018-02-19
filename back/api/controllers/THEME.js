@@ -6,12 +6,14 @@ const file = require('../../tools/file');
 
 const content = file.getContent('../THEME.json');
 
+//GET /THEME/
 exports.getAllTHEME = function (req, res) {
     res.send(
         response(content, 'getAll', null)
     );
 };
 
+//POST /THEME/
 exports.createTHEME = function (req, res) {
     try {
         const author = req.body.author;
@@ -34,6 +36,7 @@ exports.createTHEME = function (req, res) {
     }
 };
 
+//GET /THEME/THEMEId
 exports.getTHEME = function(req, res) {
     const id = req.params.THEMEId;
     console.log(req.params);
@@ -47,6 +50,7 @@ exports.getTHEME = function(req, res) {
     res.send(response(null, 'get', 'id not found'));
 };
 
+//PUT /THEME/THEMEId
 exports.updateTHEME = function(req, res) {
     const id = req.params.THEMEId;
     const author = req.body.author;
@@ -61,6 +65,7 @@ exports.updateTHEME = function(req, res) {
     res.send(response(null, 'put', 'id not found'));
 };
 
+//DELETE /THEME/THEMEId
 exports.deleteTHEME = function (req, res) {
     const id = req.params.THEMEId;
     for (let i = 0; i < Number(content.length); i++) {

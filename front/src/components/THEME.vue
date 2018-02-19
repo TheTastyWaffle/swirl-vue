@@ -13,7 +13,7 @@
   export default {
     name: 'THEME',
     props: {
-      THEME: Object
+      THEME: Object //Object passed as prop
     },
     data()  {
       return {
@@ -25,7 +25,7 @@
         const id = this.THEME.id;
         axios.delete('http://localhost:8080/THEME/' + id)
           .then(() => {
-            this.$emit('successfulDeletion');
+            this.$emit('successfulDeletion'); //signal emission
             this.error = null;
           })
           .catch(e => {

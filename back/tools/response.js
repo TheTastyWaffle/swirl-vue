@@ -1,3 +1,5 @@
+//HTTP response body formatting
+
 'use strict';
 
 module.exports = function (data, message, error) {

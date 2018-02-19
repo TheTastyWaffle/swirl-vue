@@ -1,7 +1,10 @@
+//Json source file handling
+
+'use strict';
+
 const fs = require('fs');
 
 function readJsonFileSync(filepath, encoding) {
-
     if (typeof (encoding) === 'undefined') {
         encoding = 'utf8';
     }

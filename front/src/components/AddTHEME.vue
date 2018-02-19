@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-model="author" placeholder="author's name">
+    <input v-model="author" placeholder="author's name"> <!-- both way field ('author') edition -->
     <button v-on:click="postAuthor">Add</button>
     <p v-if="error !== null">{{ this.error.message }}</p>
   </div>
@@ -25,10 +25,10 @@
     },
     methods: {
       postAuthor: function() {
-        axios.post('http://localhost:8080/THEME', {'author': this.author})
+        axios.post('http://localhost:8080/THEME', {'author': this.author}) //body parameter
           .then(() => {
               this.author = '';
-              this.$emit('successfulAddition');
+              this.$emit('successfulAddition'); //signal emission
               this.error = null;
             }
           )

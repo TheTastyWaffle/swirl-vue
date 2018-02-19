@@ -1,11 +1,43 @@
-# Swirl 2018 - Subject 01 Vue.js
-josso_t
+# Swirl 2018 - Subject Vue.js
+Authors: josso_t
+
+
+
+
+# Subject
+Your job is to implement a Vue.js client with at least 3 components.
+
+The 'front' folder should be used as an example for those struggling with Vue.js,
+but in any case the content is mandatory. You should avoid copy-pasting code
+from it and making your own components with your own ideas.
 
 ## Description
-Basic ~REST api handled with JSON as data.
+Basic ~RESTful api handled with JSON as data.
 
 ## Usage
-Use yarn preferably
+Use yarn preferably.
+By default, back-end runs on port 8080, front-end on port 8081.
+Endpoints are hardcoded, if need be you will need to changes those ports manually.
+
+
+
+
+### Front-end ('front' folder)
+```
+yarn install
+```
+
+Start the front client:
+```
+yarn run dev
+```
+
+#### Where to look
+
+- ./src/router/index.js: components entry point, inside the Vue App
+- ./src/components: where your (at least 3) components should be
+
+
 
 
 ### Back-end ('back' folder)
@@ -35,6 +67,8 @@ message                     //Explicit method used
 error                       //Error message, null if none
 ```
 
-### Front-end ('front' folder)
+#### Where to look
 
-TODO
+- ./api/routes/THEME.js: routes for THEME model
+- ./api/controllers/THEME.js: logic flr THEME routes 
+- ./server.js: server entry point and header configuration
