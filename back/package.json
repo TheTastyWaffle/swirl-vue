@@ -1,8 +1,9 @@
 {
   "name": "swirl-vue-back",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "Swirl 3rd subject - Node.js back",
   "author": "josso_t",
+  "main": "server.js",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",

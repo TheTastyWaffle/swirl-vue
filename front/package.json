@@ -1,7 +1,7 @@
 {
-  "name": "front",
+  "name": "swirl-vue-front",
   "version": "1.0.0",
-  "description": "Swirl 1st subject - Vue.js front",
+  "description": "Swirl 3rd subject - Vue.js front",
   "author": "josso_t",
   "private": true,
   "scripts": {
