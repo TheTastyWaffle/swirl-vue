@@ -39,7 +39,6 @@ exports.createTHEME = function (req, res) {
 //GET /THEME/THEMEId
 exports.getTHEME = function(req, res) {
     const id = req.params.THEMEId;
-    console.log(req.params);
     for (let i = 0; i < Number(content.length); i++) {
         if (content[i].id === id) {
             res.send(response(content[i], 'get', null));
@@ -53,7 +52,6 @@ exports.getTHEME = function(req, res) {
 //PUT /THEME/THEMEId
 exports.updateTHEME = function(req, res) {
     const id = req.params.THEMEId;
-    const author = req.body.author;
     for (let i = 0; i < Number(content.length); i++) {
         if (content[i].id === id) {
             res.status(501);
