@@ -2,7 +2,7 @@
   "name": "swirl-vue-front",
   "version": "1.0.0",
   "description": "Swirl 3rd subject - Vue.js front",
-  "author": "josso_t",
+  "author": "Thomas Josso <thomas.josso@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

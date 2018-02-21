@@ -2,7 +2,7 @@
   "name": "swirl-vue-back",
   "version": "1.0.0",
   "description": "Swirl 3rd subject - Node.js back",
-  "author": "josso_t",
+  "author": "Thomas Josso <thomas.josso@gmail.com>",
   "main": "server.js",
   "license": "MIT",
   "dependencies": {
