@@ -1,5 +1,5 @@
 # Swirl 2018 - Subject Vue.js
-Authors: josso_t
+Authors: Thomas Josso <thomas.josso@gmail.com>
 
 
 
