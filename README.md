@@ -11,13 +11,18 @@ The 'front' folder should be used as an example for those struggling with Vue.js
 but in any case the content is mandatory. You should avoid copy-pasting code
 from it and making your own components with your own ideas.
 
+I even recommend to delete the 'front' folder after having a look, as you will
+learn a lot more by yourself 👨‍🎓 (the repository will never give you up,
+do not worry 🙃)
+
 ## Description
 Basic ~RESTful api handled with JSON as data.
 
 ## Usage
 Use yarn preferably.
+
 By default, back-end runs on port 8080, front-end on port 8081.
-Endpoints are hardcoded, if need be you will need to changes those ports manually.
+Endpoints are hardcoded, if need be you will need to changes those ports manually 😕.
 
 
 
@@ -70,5 +75,5 @@ error                       //Error message, null if none
 #### Where to look
 
 - ./api/routes/THEME.js: routes for THEME model
-- ./api/controllers/THEME.js: logic flr THEME routes 
+- ./api/controllers/THEME.js: logic for THEME routes 
 - ./server.js: server entry point and header configuration
